@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900&display=swap");
+
+html {
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    width: 20%; 
+    position: fixed;
+    bottom: 25%; 
+    left: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter", sans-serif;
+    text-align: center; 
+    height: 200px; 
+}
+
+.progress-bar-container {
+    width: 5%; 
+    height: 100%; 
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, rgba(4, 255, 199, 0.9), rgba(4, 255, 199, 0));
+    border-image-slice: 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+#progress-bar {
+    background: linear-gradient(to bottom, rgba(4, 255, 199, 0.90), rgba(1, 88, 71, 0.00)); 
+    width: 100%; 
+    height: 0%; 
+    transition: height 0.5s ease-out; 
+    position: absolute; 
+    bottom: 0; 
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0; 
+}
+
+
+#progress-percentage {
+    position: absolute; 
+    bottom: -25%; 
+    left: 4%; 
+    transform: translateX(-50%); 
+    font-size: 1.5vh; 
+    color: #ffffff;
+    font-weight: 400;
+}
+
